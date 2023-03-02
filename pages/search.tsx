@@ -4,7 +4,7 @@ import { setRequestMeta } from "next/dist/server/request-meta";
 import { useState, FormEvent } from "react";
 import { Form, Button, Spinner } from "react-bootstrap";
 
-const searchNewsPage = () => {
+const SearchNewsPage = () => {
   const [searchResult, setSearchResult] = useState<NewsArticle[] | null>(null);
   const [searchResultIsLoading, setSearchresultIsLoading] = useState(false);
   const [searchResultLoadingIsError, setsearchResultLoadingIsError] =
@@ -60,4 +60,4 @@ const searchNewsPage = () => {
   );
 };
 
-export default searchNewsPage;
+export default SearchNewsPage;
